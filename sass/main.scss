@@ -1,3 +1,26 @@
-@import "./variables";
-@import "./utils/variables"
+// base styles
+@import "./base/normalize";
+@import "./base/reset";
 
+// utils
+@import "./utils/vars";
+@import "./utils/titles";
+
+
+
+// layouts
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/features";
+@import "./layouts/works";
+@import "./layouts/ourteam";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./layouts/portfolio";
+
+// components
+@import "./components/container";
+@import "./components/buttons";
+@import "./components/modal";
+@import "./components/subscription-form";
+@import "./components/portfolio-filters";
