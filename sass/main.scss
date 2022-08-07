@@ -3,7 +3,7 @@
 @import "./base/reset";
 
 // utils
-@import "./utils/vars";
+@import "./utils/variables";
 @import "./utils/titles";
 
 
@@ -19,6 +19,7 @@
 @import "./layouts/portfolio";
 
 // components
+@import "./components/header-logo";
 @import "./components/container";
 @import "./components/buttons";
 @import "./components/modal";

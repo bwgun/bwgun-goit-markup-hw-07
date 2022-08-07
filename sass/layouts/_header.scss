@@ -1,19 +1,3 @@
-// header logo
-.header__logo
- {
-  margin-right: 93px;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  color: var(--primary-text-color);
-  text-decoration: none;
-}
-
-.header__logo .header__logo-web  {
-  color: #2196f3;
-}
-
 // site nav
 
 .header {
@@ -42,13 +26,14 @@
   .header__item {
     display: block;
     margin-right: 50px;
+
+    &:nth-last-child(1) {
+        margin-right: 0;
+    }
     
   }
   
-  .header__item:nth-last-child(1) {
-    margin-right: 0;
-  }
-  
+ 
   .header__list.list {
     display: flex;
   }
@@ -60,6 +45,11 @@
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
   }
   
   .link-current {
@@ -69,19 +59,20 @@
     text-decoration: none;
     padding-top: 32px;
     padding-bottom: 32px;
+
+    &::after {
+        position: absolute;
+        display: block;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: var(--accent-color);
+        border-radius: 2px;
+    }
    
   }
   
-  .link-current::after {
-    position: absolute;
-    display: block;
-    bottom: 0;
-    content: "";
-    width: 100%;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
   
   .header__contact-list {
     display: flex;
@@ -98,16 +89,15 @@
   .header__contact-item {
     display: flex;
     align-items: center;
+
+    &:hover svg {
+        fill: var(--accent-color);
+    }
+    &:nth-child(1) {
+        margin-right: 30px;
+    }
   }
   
-  .header__contact-item:hover svg {
-    fill: var(--accent-color);
-    
-  }
-  
-  .header__contact-item:nth-child(1) {
-    margin-right: 30px;
-  }
   
   .header__contact-icon {
     margin-right: 10px;
@@ -118,15 +108,14 @@
     display: flex;
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+        color: var(--accent-color);
+    }
   }
   
-  .header__list .link:hover,
-  .header__list .link:focus {
-    color: var(--accent-color);
-  }
   
-  .header__contact-list .link:hover,
-  .header__contact-list .link:focus {
-    fill: var(--accent-color);
-    color: var(--accent-color);
-  }
+  
+  

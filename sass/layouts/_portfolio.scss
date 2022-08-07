@@ -37,7 +37,7 @@
     line-height: 1.55;
     color: var(--white-color);
   
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--animation);
   
     background-color: rgba(33, 150, 243, 0.9);
   }
@@ -75,11 +75,12 @@
   
   .portfolio__link {
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--animation);
+
+    &:hover,
+    &:focus {
+        box-shadow: 0px 4px 4px 0px #00000040;
+    }
   }
   
-  .portfolio__link:hover,
-  .portfolio__link:focus {
-    box-shadow: 0px 4px 4px 0px #00000040;
-  }
-  
+   

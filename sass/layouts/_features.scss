@@ -21,11 +21,13 @@
   .features__item {
     margin-right: 30px;
     width: 270px;
+
+    &:last-child {
+        margin-right: 0;
+    }
   }
   
-  .features__item:nth-last-child(1) {
-    margin-right: 0;
-  }
+ 
   
   .features__field {
     display: flex;
